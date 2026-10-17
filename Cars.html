@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>السيارات - Cars | مكتب الأصدقاء لتأجير السيارات</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>مكتب الأصدقاء / Friends Office</h1>
+            <p>لتأجير السيارات / Car Rental</p>
+        </div>
+        <nav>
+            <a href="home.html">الرئيسية / Home</a>
+            <a href="AboutUs.html">من نحن / About Us</a>
+            <a href="Cars.html" class="active">السيارات / Cars</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">السيارات المتاحة / Available Cars</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>الرمز / Code</th>
+                    <th>الصورة / Image</th>
+                    <th>الموديل / Model</th>
+                    <th>سنة الصنع / Year</th>
+                    <th>السعر اليومي / Daily Price</th>
+                    <th>إظهار التفاصيل / Details</th>
+                    <th>اختيار / Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CR-001</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Toyota_Corolla_Hybrid_%28E210%29_IMG_4338.jpg" alt="Toyota Corolla" width="90" height="60" /></td>
+                    <td>Toyota Corolla</td>
+                    <td>2023</td>
+                    <td>ل.س 250,000</td>
+                    <td><input type="checkbox" class="show-details-cb" value="1" /></td>
+                    <td><input type="checkbox" class="car-select-cb" value="CR-001" data-model="Toyota Corolla" data-price="250000" /></td>
+                </tr>
+                <tr id="details-1" class="details-row" style="display:none;">
+                    <td colspan="7">التفاصيل / Details: وقود بنزين | أوتوماتيك | 5 مقاعد | 15,000 كم | اللون: أبيض</td>
+                </tr>
+
+                <tr>
+                    <td>CR-002</td>
+                    <td><img src="https://uae.yallamotor.com/_next/image?url=https%3A%2F%2Fymimg1.b8cdn.com%2Fresized%2Fcar_model%2F7232%2Fpictures%2F13944007%2Fwebp_listing_main_ext-3231303031.webp&amp;w=1920&amp;q=75" alt="Kia Sportage" width="90" height="60" /></td>
+                    <td>Kia Sportage</td>
+                    <td>2022</td>
+                    <td>ل.س 400,000</td>
+                    <td><input type="checkbox" class="show-details-cb" value="2" /></td>
+                    <td><input type="checkbox" class="car-select-cb" value="CR-002" data-model="Kia Sportage" data-price="400000" /></td>
+                </tr>
+                <tr id="details-2" class="details-row" style="display:none;">
+                    <td colspan="7">التفاصيل / Details: وقود بنزين | أوتوماتيك | 5 مقاعد | 30,000 كم | اللون: أبيض</td>
+                </tr>
+
+                <tr>
+                    <td>CR-003</td>
+                    <td><img src="https://pictures.dealer.com/h/heritagehyundaitowson/0917/04ea60df82bc959ad5d9380da07811cfx.jpg" alt="Hyundai Elantra" width="90" height="60" /></td>
+                    <td>Hyundai Elantra</td>
+                    <td>2024</td>
+                    <td>ل.س 300,000</td>
+                    <td><input type="checkbox" class="show-details-cb" value="3" /></td>
+                    <td><input type="checkbox" class="car-select-cb" value="CR-003" data-model="Hyundai Elantra" data-price="300000" /></td>
+                </tr>
+                <tr id="details-3" class="details-row" style="display:none;">
+                    <td colspan="7">التفاصيل / Details: وقود بنزين | أوتوماتيك | 5 مقاعد | 5,000 كم | اللون: أحمر</td>
+                </tr>
+
+                <tr>
+                    <td>CR-004</td>
+                    <td><img src="https://dbz-images.dubizzle.com/images/2026/08/27/2f219cb95c9d4f03a1765a8d8a7400ef-.jpg?impolicy=lpv" alt="Chevrolet Spark" width="90" height="60" /></td>
+                    <td>Chevrolet Spark</td>
+                    <td>2021</td>
+                    <td>ل.س 180,000</td>
+                    <td><input type="checkbox" class="show-details-cb" value="4" /></td>
+                    <td><input type="checkbox" class="car-select-cb" value="CR-004" data-model="Chevrolet Spark" data-price="180000" /></td>
+                </tr>
+                <tr id="details-4" class="details-row" style="display:none;">
+                    <td colspan="7">التفاصيل / Details: وقود بنزين | عادي | 4 مقاعد | 50,000 كم | اللون: أزرق</td>
+                </tr>
+
+                <tr>
+                    <td>CR-005</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6930_ZOx7IpDFDhf5DcMVfiHrw-1w5DKCQjHEvM61TQ&amp;s=10" alt="Renault Logan" width="90" height="60" /></td>
+                    <td>Renault Logan</td>
+                    <td>2023</td>
+                    <td>ل.س 200,000</td>
+                    <td><input type="checkbox" class="show-details-cb" value="5" /></td>
+                    <td><input type="checkbox" class="car-select-cb" value="CR-005" data-model="Renault Logan" data-price="200000" /></td>
+                </tr>
+                <tr id="details-5" class="details-row" style="display:none;">
+                    <td colspan="7">التفاصيل / Details: وقود بنزين | عادي | 5 مقاعد | 22,000 كم | اللون: فضي</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="text-align: left; margin-top: 25px;">
+            <button type="button" id="continueBtn" class="btn">متابعة / Continue</button>
+        </div>
+
+        <div id="bookingFormSection" style="display:none;">
+            <form id="bookingForm" action="" method="post">
+                <fieldset>
+                    <legend>نموذج حجز السيارة / Booking Form</legend>
+                    
+                    <p>
+                        <label for="fullName">الاسم الكامل (عربي) / Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" />
+                    </p>
+                    
+                    <p>
+                        <label for="nationalId">الرقم الوطني / National ID:</label>
+                        <input type="text" id="nationalId" name="nationalId" maxlength="11" /> * إلزامي / Required
+                    </p>
+                    
+                    <p>
+                        <label for="startDate">تاريخ البداية / Start Date:</label>
+                        <input type="date" id="startDate" name="startDate" /> * إلزامي / Required
+                    </p>
+                    
+                    <p>
+                        <label for="endDate">تاريخ النهاية / End Date:</label>
+                        <input type="date" id="endDate" name="endDate" /> * إلزامي / Required
+                    </p>
+                    
+                    <p>
+                        <label for="mobile">رقم الموبايل / Mobile Number:</label>
+                        <input type="text" id="mobile" name="mobile" />
+                    </p>
+                    
+                    <p>
+                        <label for="email">البريد الإلكتروني / Email:</label>
+                        <input type="email" id="email" name="email" />
+                    </p>
+                    
+                    <p style="text-align: center; margin-top: 20px;">
+                        <input type="submit" value="إرسال الطلب / Submit" class="btn" />
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 مكتب الأصدقاء لتأجير السيارات / Friends Car Rental — جميع الحقوق محفوظة / All Rights Reserved</p>
+    </footer>
+</body>
+</html>
